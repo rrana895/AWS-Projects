@@ -75,3 +75,15 @@ function mealRecipeModal(meal) {
     mealDetailsContent.innerHTML = html;
     mealDetailsContent.parentElement.classList.add('showRecipe');
 }
+
+window._config = {
+    cognito: {
+        userPoolId: 'us-east-1_sLMPnYSsh', // e.g. us-east-2_uXboG5pAb
+        userPoolClientId: '7su8nmuul1jtjlpnkg22hakroc', // e.g. 25ddkmj4v6hfsfvruhpfi7n4hv
+        region: 'us-east-1' // e.g. us-east-2
+    },
+    api: {
+        invokeUrl: 'https://master.dyx0kcqxlivpe.amplifyapp.com/' // e.g. https://rc7nyt4tql.execute-api.us-west-2.amazonaws.com/prod',
+    }
+};
+
