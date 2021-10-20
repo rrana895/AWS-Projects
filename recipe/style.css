@@ -147,7 +147,126 @@ body {
     background: var(--main-bg-dark);
 }
 
-.
+
+/*meal details */
+
+.meal-details {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    background: var(--main-bg-color);
+    border-radius: 12px;
+    width: 90%;
+    height: 90%;
+    overflow-y: scroll;
+    display: none;
+    padding: 32px 0;
+}
+
+.meal-details::-webkit-scrollbar {
+    width: 8px;
+}
+
+.meal-details::-webkit-scrollbar-thumb {
+    background: aliceblue;
+    border-radius: 32px;
+}
+
+
+/*js*/
+
+.showRecipe {
+    display: block;
+}
+
+.meal-details-content {
+    margin: 40px;
+}
+
+.meal-details-content p:not(.recipe-category) {
+    padding: 15px 0;
+}
+
+.recipe-close-btn {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    font-size: 30px;
+    background: aliceblue;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+}
+
+.recipe-title {
+    letter-spacing: 1.2px;
+    padding-bottom: 18px;
+}
+
+.recipe-category {
+    background: aliceblue;
+    font-weight: 650;
+    color: var(--main-bg-color);
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.recipe-category {
+    background: aliceblue;
+    font-weight: 650;
+    color: var(--main-bg-color);
+    display: inline-block;
+    padding: 10px 12px;
+    border-radius: 14px;
+}
+
+.recipe-instruct {
+    padding: 12px 0;
+}
+
+.recipe-meal-img img {
+    width: 105px;
+    height: 105px;
+    border-radius: 20%;
+    margin: 0 auto;
+    display: block;
+}
+
+.recipe-link {
+    margin: 22px 0;
+}
+
+.recipe-link a {
+    color: aliceblue;
+    font-size: 22px;
+    font-weight: 750;
+    transition: all 0.5s linear;
+}
+
+.recipe-link a:hover {
+    opacity: 0.9;
+}
+
+
+/*  */
+
+.notFound {
+    grid-template-columns: 1fr!important;
+    color: var(--tenne-tawny);
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 100%;
+}
+
+
 /* Media Queries */
 
 @media screen and (min-width: 600px) {
